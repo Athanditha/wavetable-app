@@ -13,7 +13,7 @@ module.exports = {
         accent: '#b3b3b3',       // Light gray accent for subtle highlights
         background: '#1a1a1a',   // Very dark gray for the background
         card: '#e0e0e0',         // Light gray for cards
-        text: '#f5f5f5',         // Off-white for text for readability
+        text: '#ffffff',         // Off-white for text for readability
         'text-secondary': '#a6a6a6', // Medium gray for secondary text
         'hover-link': '#cccccc', // Light gray for hover effect on links
       },

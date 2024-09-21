@@ -14,7 +14,7 @@
     <!-- Featured Items Section -->
     <section class="py-16 bg-background">
         <div class="container mx-auto text-center">
-            <h2 class="text-3xl font-heading font-bold mb-8">Featured Items</h2>
+            <h2 class="text-3xl font-heading font-bold mb-8 text-text-secondary mt-2">Featured Items</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- Loop through items and display them-->
                 @foreach($items as $item)
