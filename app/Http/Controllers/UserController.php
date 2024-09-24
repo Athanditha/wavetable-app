@@ -7,23 +7,6 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    // Display all users
-    public function index()
-    {
-        $users = User::all(); // Fetch all users
-        return view('custmgmt.custmain', compact('users')); // Pass users to the view
-    }
-
-    // Show the form for editing a user
-    public function edit(User $user)
-    {
-        return view('custmgmt.editcust', compact('user'));
-    }
-
-    public function show(User $user)
-    {
-        return view('custmgmt.viewcust', compact('user'));
-    }
 
     public function update(Request $request, User $user)
     {
@@ -31,6 +14,7 @@ class UserController extends Controller
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255',
             'password' => 'nullable|string|min:8',
+            'role'  => 'required|string',
         ]);
     
         $user->update([
